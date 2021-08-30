@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .loginForm{
+            margin: auto;
+            width: 20%;
+            text-align: center;
+            border: 2px solid #ccc;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginForm">
+        <h1>LOGIN</h1>
+
+        <form action="actionLogin.php" method="post">
+            <label>
+                Email<br>
+                <input type="email" name="email" id="email" required>
+            </label><br><br>
+            <label>
+                Senha<br>
+                <input type="password" name="senha" id="senha" required>
+            </label><br><br>
+
+            <input type="submit" value="Logar"><br><br>
+
+            <p>Não possui login? <a href="createUser.html">cadastre-se</a></p>
+        </form>
+    </div>
+</body>
+</html>
